@@ -56,7 +56,6 @@ class Penne_with_beef(Pasta):
     def get_additions(self):
         return "Пармезан"
 
-# Фабрика для создания пасты
 class FactoryPasta:
 
     @staticmethod
@@ -72,7 +71,7 @@ class FactoryPasta:
 
 
 if __name__ == "__main__":
-    pasta_type = input("Введите тип пасты (bolognese,carbonara,penne with beef): ")
+    pasta_type = input("Введите название пасты: bolognese,carbonara,penne with beef): ")
     pasta = FactoryPasta.make_pasta(pasta_type)
 
     print(pasta.get_type())
